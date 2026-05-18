@@ -13,7 +13,7 @@ df['customer_status'].value_counts(normalize=True).mul(100)
 # churned    90.533541
 # active      9.466459
 
-
+#Churn Rate Distribution
 plt.figure(figsize=(10, 6))
 df['customer_status'].value_counts(normalize=True).mul(100).plot(kind='bar', color=['red', 'green'])
 plt.title('Customer Retention Status')
